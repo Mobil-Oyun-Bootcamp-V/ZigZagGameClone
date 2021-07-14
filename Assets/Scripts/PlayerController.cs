@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
          ts.CreateTile();
          cl.gameObject.AddComponent<Rigidbody>();
          StartCoroutine(DeleteTile(cl.gameObject));
-         
+         Scoring.score+=1;
         }
     }
 
